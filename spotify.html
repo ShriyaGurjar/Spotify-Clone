@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-web player music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="spotify">
+
+
+
+     <div class="sidebar">
+
+<!--  home,search nav -->
+     <div class="first">
+       <div class="firstnav"> <i class="fa-solid fa-house" style="opacity: 1;"></i> <h4>Home</h4></div>
+       <div class="firstnav"> <i class="fa-solid fa-magnifying-glass"></i><h4>Search</h4></div>
+    </div>
+
+<!-- library -->
+<div class="second">
+
+    <div class="library">
+        <img class="lib"  src="./library_icon.png"> <h4 id="your">Your Library</h4><i  class="fa-solid fa-plus" id="your"></i>
+    </div>
+<!-- box-1 -->
+    <div class="box">
+        <h4 class="boxp1">create your first playlist</h4>
+        <p class="para">it's easy we will help you </p>
+        <button>Create playlist</button>
+
+    </div>
+<!-- box-2 -->
+    <div class="box">
+        <h4 class="boxp1">Let's find some podcast to follow</h4>
+        <p class="para"> we'll keep you updated on new episodes </p>
+        <button>Browse Podcasts</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="maincontent">
+
+        <div class="stickynav">
+            <img src="/backward_icon.png">
+            <img class="hide" src="forward_icon.png">
+            <button class="explore" "hide">Explore Premium</button>
+            <button class="install"><i class="fa-solid fa-download"></i>Install App</button>
+            <div class="user"><i class="fa-solid fa-user" ></i></div>
+        </div>
+
+   <h2 class="Recent">Recently played</h2>
+        <div class="cards">
+            <div class="firstcard">
+                <img class="cardimg" src="/card1img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+        </div>
+
+
+        <h2 class="Recent">Spotify original & exclusive podcasts</h2>
+        <div class="cardsmore">
+            <div class="firstcard more">
+                <img class="cardimg" src="/card2img.jpeg">
+                <h4 class="top">True stories</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+            <div class="firstcard more">
+                <img class="cardimg" src="/card3img.jpeg">
+                <h4 class="top">Decode Dil</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+            <div class="firstcard more">
+                <img class="cardimg" src="/card4img.jpeg">
+                <h4 class="top">South Blast</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+             <div class="firstcard more">
+                <img class="cardimg" src="/card4img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+            <div class="firstcard more">
+                <img class="cardimg" src="/card2img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+        </div>
+
+        <h2 class="Recent">Featured Charts</h2>
+        <div class="cardsmore">
+            <div class="firstcard more">
+                <img class="cardimg" src="/card5img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+            <div class="firstcard more">
+                <img class="cardimg" src="/card6img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+            <div class="firstcard more">
+                <img class="cardimg" src="/card1img.jpeg">
+                <h4 class="top">Top 50 global</h4>
+                <p class="update">Your daily updates of the most played...</p>
+            </div>
+          <div class="footer">
+            <div class="line">
+            </div>
+          </div>
+
+
+
+     </div>
+</div>
+
+
+
+
+
+
+
+    <div class="musicplayer">
+        <!-- first div -->
+        <div class="album">
+            <Img src="/card1img.jpeg" id="imgalb">
+                <p class="music">Daylight</p>
+                <p class="singer">Shriya Gurjar</p>
+                <i class="fa-regular fa-heart" id="Cicon"></i>
+                <i class="fa-solid fa-tv" id="Cicon"></i>
+        </div>
+
+
+<!-- player center -->
+        <div class="player">
+            <div class="bar">
+               <img src="/player_icon1.png" class="last">
+               <img src="/player_icon2.png" class="last">
+               <img src="/player_icon3.png" class="last" style="opacity: 1;height: 2rem;width: 2rem;">
+               <img src="/player_icon4.png" class="last">
+               <img src="/player_icon5.png" class="last">
+            </div>
+            <div class="vol">
+                <span class="current">00:00</span>
+                <input type="range" min="0" max="100" step="1" class="progress">
+                <span class="after">3:33</span>
+            </div>
+        </div>
+
+
+<!-- last div -->
+        <div class="controls">
+            <i class="fa-solid fa-box" id="Cicon"></i>
+            <i class="fa-solid fa-microphone" id="Cicon"></i>
+            <i class="fa-solid fa-bars-progress"  id="Cicon"></i>
+            <i class="fa-solid fa-camera-rotate"  id="Cicon"></i>
+            <i class="fa-solid fa-volume-low"  id="Cicon"></i><input type="range" class="lastvol">
+        </div>
+    </div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>

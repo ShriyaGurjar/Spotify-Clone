@@ -1,0 +1,279 @@
+
+
+* {
+ font-family: Montserrat;
+  margin: 0%;
+  background-color: #000;
+  color: #fff;
+  
+}
+.spotify{
+    display: flex;
+}
+.sidebar{
+    height: 88vh;
+    width: 340px;
+    border-radius: 16px;
+    background-color:black;
+   
+}
+.maincontent{
+    height: 88vh;
+    width: 700px;
+    flex: 1;
+    overflow: auto;
+    border-radius: 16px;
+    background-color: #121212;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.musicplayer{
+    display: flex;
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   height:10vh;
+}
+.firstnav{
+    display: flex;
+    padding: 20px 10px 10px 30px;
+    background-color:#121212;
+    border-radius: 1rem;
+}
+i{
+    padding: 0 1rem 0 0;
+    opacity: 0.7;
+}
+i:hover{
+    opacity: 1;
+    transform: scale(1.1); 
+}
+
+.first{
+    background-color: #121212;
+  border-radius: 1rem;
+}
+.second{
+    height: 90%;
+     margin-top: 0.50rem; 
+    background-color: #121212;
+    border-radius: 1rem;
+}
+.library{
+    display: flex;
+     justify-content: space-between; 
+    align-items: center;
+    background-color: #121212;
+  
+}
+
+.lib{
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    background-color: #121212;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 8rem;
+    width: 18rem;
+    background-color:#232323;
+    border-radius:0.75rem ;
+    margin: 8px 0 8px 5px;
+  padding: 16px 20px 16px 20px;
+}
+.para{
+    padding: 2px;
+    margin: 7px;
+    font-size: 14px;
+    opacity: 0.9;
+    background-color:#232323
+}
+button{
+    background-color: #fff;
+    color: #000;
+    height: 25px;
+    width:9rem;
+    border-radius: 50px;
+    margin-left: 12px;
+    font-weight: 700;
+    
+
+   
+}
+.boxp1{
+    background-color:#232323;
+    padding-bottom: 12px;
+}
+.install{
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 43rem;
+  
+}
+.explore{
+    position: relative;
+    left: 43rem;
+}
+.user{
+    position: relative;
+    left: 44rem;
+
+}
+.stickynav{
+     display: flex; 
+    background-color: #121212;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+   
+}
+@media(max-width:1000px) {
+    .hide{
+        display: none;
+    }
+    
+}
+.Recent{
+    background-color: #121212;
+    padding: 5px 0 0 5px;
+}
+.cards{
+    background-color: #121212;
+    padding: 1rem;
+}
+.firstcard{
+    background-color: #232323;
+    width: 150px;
+    height: 250px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.cardimg{
+    width: 100%;
+ 
+    border-radius: 0.5rem;
+}
+.top{
+    font-weight: 700;
+    padding: 8px 0 8px 0;
+    background-color: #232323;
+}
+.update{
+    font-weight: 300PX;
+    padding: 8px 0 8px 0;
+    background-color: #232323;
+    opacity: 0.8;
+}
+.cardsmore{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121212;
+}
+.more{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top:  1px solid white;
+    opacity: 0.4;
+}
+.album{
+ width: 25%;
+ display: flex;
+
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.last{
+    height: 1rem;
+    width: 1rem;
+    padding-left:1.2rem ;
+    opacity: 0.7;
+   
+}
+.last:hover{
+    opacity: 1;
+   
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7rem;
+   
+}
+
+.vol{
+    display: flex;
+    justify-content: center;
+   
+}
+.progress{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+
+}
+.progress::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+#Cicon{
+   position: relative;
+   left: 2rem;
+   top: 2rem;
+   padding-left: 0.5rem;
+}
+.lastvol{
+    position: relative;
+    top: 2rem;
+    left: 1.2rem;
+}
+.singer{
+    opacity: 0.8;
+    font-size:small;
+   padding-right: 1rem;
+   position: relative;
+   top: 2.2rem;
+   right: 1.6rem;
+  
+}
+.music{
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+}
+#imgalb{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    left: 2rem;
+    top: 0.5rem;
+}
